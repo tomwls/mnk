@@ -45,7 +45,7 @@
 	// Rotating banner messages
 
 	let i = $state(0);
-	let current = $state(lines[i]);
+	let current = $derived(lines[i]);
 
 	onMount(() => {
 		const interval = setInterval(() => {
