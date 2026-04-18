@@ -1,12 +1,5 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
-	import Navbar from '$lib/components/Navbar.svelte';
-	import Submit from '$lib/components/Submit.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<Navbar />
-<Submit />
-
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
+<Footer />

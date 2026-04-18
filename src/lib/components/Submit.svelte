@@ -1,12 +1,4 @@
 <div class="container">
-	<h1>Help to Improve the Database</h1>
-
-	<p>
-		Do you have a game that you want to see in the database? Or maybe you have some feedback on an
-		existing entry? You can submit new games or suggest edits to existing entries using the form
-		below. Your contributions will help make the database more comprehensive and accurate for
-		everyone!
-	</p>
 	<form action="/submit" method="POST" class="submission-form">
 		<div class="form-group">
 			<label for="name">Game Name</label>
@@ -42,28 +34,30 @@
 <style>
 	.container {
 		max-width: 800px;
-		margin: 0 auto;
+		margin: -60px auto;
 		padding: 20px;
 		background: transparent;
-		border: 1px solid #1f3a2a;
+		border: none;
 	}
 
 	.submission-form {
 		max-width: 600px;
 		margin: 20px auto;
 		padding: 20px;
-		border: 1px solid #1f3a2a;
-		background: #0a0a0a;
+		/* border: 1px solid #1f3a2a;
+		background: #0a0a0a; */
 	}
 
 	.form-group {
-		margin-bottom: 15px;
+		margin-bottom: 22px;
 	}
 
 	label {
 		display: block;
-		margin-bottom: 5px;
-		font-weight: 600;
+		margin-bottom: 8px;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 0.9rem;
 		color: #00ff9c;
 	}
 
@@ -72,19 +66,34 @@
 	textarea {
 		width: 100%;
 		padding: 8px;
-		border: 1px solid #1f3a2a;
-		border-radius: 4px;
-		background: #1f3a2a;
+		border: 1px solid #00ff9c;
+		border-radius: 0;
+		background: #0a0a0a;
 		color: #7aa38b;
+	}
+
+	input:focus {
+		outline: none;
+		border-color: #7aa38b;
+	}
+
+	select:focus {
+		outline: none;
+		border-color: #7aa38b;
+	}
+
+	textarea:focus {
+		outline: none;
+		border-color: #7aa38b;
 	}
 
 	button {
 		padding: 10px 20px;
 		border: none;
-		border-radius: 4px;
+		border-radius: 0;
 		background: #00ff9c;
 		color: #000000;
-		font-weight: 600;
+		text-transform: uppercase;
 		cursor: pointer;
 	}
 

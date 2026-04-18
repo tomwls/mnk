@@ -3,12 +3,11 @@
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Hero from '$lib/components/Hero.svelte';
-	import TableBanner from '$lib/components/TableBanner.svelte';
 
 	let { data, children, searchQuery } = $props();
 </script>
 
-<Navbar />
+<!-- <Navbar /> -->
 
 <Hero
 	totalGames={data.totalGames}
@@ -17,8 +16,6 @@
 	totalSwitchGames={data.totalSwitchGames}
 	bind:searchQuery
 />
-
-<TableBanner />
 
 <svelte:head>
 	<link rel="icon" href={favicon} />

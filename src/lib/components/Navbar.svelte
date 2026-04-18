@@ -5,9 +5,10 @@
 		{ name: 'All', href: '/' },
 		{ name: 'Xbox', href: '/xbox' },
 		{ name: 'PS5', href: '/ps5' },
+		{ name: 'Steam Deck', href: '/steam-deck' },
 		{ name: 'Switch', href: '/switch' },
 		{ name: 'Submit', href: '/submit' },
-		{ name: 'API', href: '/api' }
+		{ name: 'Info', href: '/info' }
 	];
 </script>
 
@@ -30,9 +31,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		max-width: 80%;
+		margin: -7px auto 0 auto;
 		padding: 16px 32px;
-		border-bottom: 1px solid #1f3a2a;
-		background: rgb(10, 10, 10);
+		border: 1px solid #1f3a2a;
+		background: rgba(10, 10, 10, 0.5);
 		backdrop-filter: blur(6px);
 	}
 

@@ -1,6 +1,7 @@
 <script>
 	import { searchQuery } from '$lib/stores/search';
 	import GameRow from '$lib/components/GameRow.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	let { games = [] } = $props();
 
@@ -96,21 +97,9 @@
 			{/each}
 		</tbody>
 	</table>
-</section>
 
-<div class="footer">
-	<p>mnk.gg is not affiliated with Microsoft, Sony, Nintendo or any game publisher.</p>
-	<p>
-		The information on this site is collected from various sources and may be inaccurate or
-		outdated. Use it at your own risk.
-	</p>
-	<p>
-		Found a game that's missing or listed with wrong support? <a href="/submit">Submit it here</a>.
-	</p>
-	<p>
-		Built by <a href="https://github.com/tomwls">Tom</a>.
-	</p>
-</div>
+	<Footer />
+</section>
 
 <style>
 	.table-section {
@@ -190,26 +179,5 @@
 		border-left: 1px solid #1f3a2a;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-	}
-
-	.footer {
-		text-align: center;
-		padding: 20px;
-		color: #7aa38b;
-		font-size: 0.75rem;
-		line-height: 2;
-	}
-
-	svg {
-		margin-bottom: 4px;
-	}
-
-	a {
-		color: #7aa38b;
-		text-decoration: underline;
-	}
-
-	a:hover {
-		color: #00ff9c;
 	}
 </style>
