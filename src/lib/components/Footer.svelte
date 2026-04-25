@@ -1,5 +1,5 @@
 <div class="footer">
-	<p>mnk.gg is not affiliated with Microsoft, Sony, Nintendo or any game publisher.</p>
+	<p>mnk.gg is not affiliated with any game publisher.</p>
 	<p>
 		The information on this site is collected from various sources and may be inaccurate or
 		outdated. Use it at your own risk.

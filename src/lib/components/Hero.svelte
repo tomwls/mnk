@@ -134,7 +134,7 @@
 				</div>
 			</a>
 
-			<a href="/ps5" class="stat-link">
+			<!-- <a href="/ps5" class="stat-link">
 				<div class="stat">
 					<span class="label">Coming Soon</span>
 					<span class="platform-svg"
@@ -180,7 +180,7 @@
 					>
 					<span class="value">Switch</span>
 				</div>
-			</a>
+			</a> -->
 		</div>
 	{/if}
 
@@ -378,5 +378,16 @@
 	.value {
 		text-transform: uppercase;
 		color: #d8ffe8;
+	}
+
+	/* mobile */
+	@media (max-width: 868px) {
+		h1 {
+			font-size: 1.25rem;
+			padding: 0 32px;
+		}
+		.search input {
+			max-width: 80%;
+		}
 	}
 </style>

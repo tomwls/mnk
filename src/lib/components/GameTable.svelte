@@ -84,10 +84,10 @@
 	<table class="game-table">
 		<thead>
 			<tr>
-				<th>Game</th>
-				<th>Platform</th>
-				<th>Support</th>
-				<th>Notes</th>
+				<th class="game-column">Game</th>
+				<th class="platform-column">Platform</th>
+				<th class="support-column">Support</th>
+				<th class="notes-column">Notes</th>
 			</tr>
 		</thead>
 
@@ -179,5 +179,40 @@
 		border-left: 1px solid #1f3a2a;
 		text-transform: uppercase;
 		letter-spacing: 1px;
+	}
+
+	.game-column {
+		width: 40%;
+	}
+
+	.platform-column {
+		width: 20%;
+	}
+
+	.support-column {
+		width: 20%;
+	}
+
+	.notes-column {
+		width: 20%;
+	}
+
+	/* Mobile responsiveness */
+	@media (max-width: 768px) {
+		.game-table {
+			width: 100%;
+		}
+		.notes-column {
+			display: none;
+		}
+		.game-column {
+			width: 50%;
+		}
+		.platform-column {
+			width: 25%;
+		}
+		.support-column {
+			width: 25%;
+		}
 	}
 </style>

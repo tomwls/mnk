@@ -1,5 +1,10 @@
 <div class="container">
 	<form action="/submit" method="POST" class="submission-form">
+		<p>
+			Found a game that is missing or has incorrect information? Let us know using the form below,
+			thanks for the help!
+		</p>
+		<p class="muted">It may take a couple of days to be reviewed by an admin.</p>
 		<div class="form-group">
 			<label for="name">Game Name</label>
 			<input type="text" id="name" name="name" required />
@@ -10,8 +15,7 @@
 				<option value="">Select a platform</option>
 				<option value="xbox">Xbox</option>
 				<option value="ps5">PS5</option>
-				<option value="switch">Switch</option>
-				<!-- Add more platforms as needed -->
+				<!-- <option value="switch">Switch</option> -->
 			</select>
 		</div>
 		<div class="form-group">
@@ -38,6 +42,16 @@
 		padding: 20px;
 		background: transparent;
 		border: none;
+	}
+
+	p {
+		cursor: default;
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+
+	.muted {
+		font-size: small;
 	}
 
 	.submission-form {
