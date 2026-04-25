@@ -6,8 +6,8 @@ Built with [Svelte](https://svelte.dev/), [Supabase](https://supabase.com/) and 
 
 ## TODO
 
-- [ ] Mobile responsive
+- [x] Mobile responsive
 - [ ] Submit form
+- [ ] Game page with comments
 - [ ] Steam Deck database
 - [ ] Switch database
-- [ ] Info page
